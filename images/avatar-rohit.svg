@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="skin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#DEB887"/>
+      <stop offset="100%" stop-color="#D2B48C"/>
+    </linearGradient>
+    <linearGradient id="hair" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2F1B14"/>
+      <stop offset="100%" stop-color="#1A0E0A"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="50" cy="50" r="49" fill="#27ae60" opacity="0.1" stroke="#27ae60" stroke-width="2"/>
+  
+  <!-- Face -->
+  <circle cx="50" cy="45" r="22" fill="url(#skin)"/>
+  
+  <!-- Hair (neat, teacher-like) -->
+  <path d="M 30 35 Q 35 25 50 25 Q 65 25 70 35 Q 70 40 68 45 Q 65 30 50 30 Q 35 30 30 40 Z" fill="url(#hair)"/>
+  
+  <!-- Glasses (teacher symbol) -->
+  <circle cx="44" cy="42" r="6" fill="none" stroke="#333" stroke-width="2"/>
+  <circle cx="56" cy="42" r="6" fill="none" stroke="#333" stroke-width="2"/>
+  <path d="M 50 42 L 50 40" stroke="#333" stroke-width="2"/>
+  <path d="M 38 42 Q 35 40 32 42" stroke="#333" stroke-width="2" fill="none"/>
+  <path d="M 62 42 Q 65 40 68 42" stroke="#333" stroke-width="2" fill="none"/>
+  
+  <!-- Eyes behind glasses -->
+  <circle cx="44" cy="42" r="2" fill="#000"/>
+  <circle cx="56" cy="42" r="2" fill="#000"/>
+  <circle cx="44.5" cy="41.5" r="0.5" fill="#fff"/>
+  <circle cx="56.5" cy="41.5" r="0.5" fill="#fff"/>
+  
+  <!-- Eyebrows -->
+  <path d="M 40 36 Q 44 34 48 36" stroke="#2F1B14" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <path d="M 52 36 Q 56 34 60 36" stroke="#2F1B14" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  
+  <!-- Nose -->
+  <path d="M 50 46 Q 51 49 50 51" stroke="#D2B48C" stroke-width="1" fill="none"/>
+  
+  <!-- Mouth (gentle smile) -->
+  <path d="M 46 54 Q 50 56 54 54" stroke="#8B4513" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  
+  <!-- Neck/Shoulders -->
+  <ellipse cx="50" cy="75" rx="18" ry="25" fill="url(#skin)"/>
+  
+  <!-- Shirt (professional) -->
+  <rect x="32" y="70" width="36" height="30" rx="5" fill="#4169E1"/>
+  <rect x="32" y="70" width="36" height="5" rx="5" fill="#fff"/>
+  
+  <!-- Tie -->
+  <polygon points="50,70 47,75 47,85 50,88 53,85 53,75" fill="#B22222"/>
+  <path d="M 47 78 L 53 78" stroke="#fff" stroke-width="1"/>
+  
+  <!-- Book (teacher symbol) -->
+  <g transform="translate(75,30)">
+    <rect x="0" y="0" width="8" height="12" fill="#8B4513"/>
+    <rect x="1" y="1" width="6" height="10" fill="#F5DEB3"/>
+    <path d="M 2 3 L 6 3" stroke="#8B4513" stroke-width="0.5"/>
+    <path d="M 2 5 L 6 5" stroke="#8B4513" stroke-width="0.5"/>
+    <path d="M 2 7 L 6 7" stroke="#8B4513" stroke-width="0.5"/>
+  </g>
+</svg>

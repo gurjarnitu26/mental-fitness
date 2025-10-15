@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="skin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#DEB887"/>
+      <stop offset="100%" stop-color="#CD853F"/>
+    </linearGradient>
+    <linearGradient id="hair" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2F1B14"/>
+      <stop offset="100%" stop-color="#1A0E0A"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="50" cy="50" r="49" fill="#667eea" opacity="0.1" stroke="#667eea" stroke-width="2"/>
+  
+  <!-- Face -->
+  <circle cx="50" cy="45" r="22" fill="url(#skin)"/>
+  
+  <!-- Hair -->
+  <path d="M 28 35 Q 35 25 50 25 Q 65 25 72 35 Q 72 40 70 45 Q 65 30 50 30 Q 35 30 28 40 Z" fill="url(#hair)"/>
+  
+  <!-- Eyes -->
+  <circle cx="44" cy="42" r="2" fill="#000"/>
+  <circle cx="56" cy="42" r="2" fill="#000"/>
+  <circle cx="44.5" cy="41.5" r="0.5" fill="#fff"/>
+  <circle cx="56.5" cy="41.5" r="0.5" fill="#fff"/>
+  
+  <!-- Eyebrows -->
+  <path d="M 40 38 Q 44 36 48 38" stroke="#2F1B14" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <path d="M 52 38 Q 56 36 60 38" stroke="#2F1B14" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  
+  <!-- Nose -->
+  <path d="M 50 44 Q 51 47 50 49" stroke="#CD853F" stroke-width="1" fill="none"/>
+  
+  <!-- Mouth -->
+  <path d="M 46 52 Q 50 54 54 52" stroke="#8B4513" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  
+  <!-- Neck/Shoulders -->
+  <ellipse cx="50" cy="75" rx="18" ry="25" fill="url(#skin)"/>
+  
+  <!-- Shirt (artist style) -->
+  <rect x="32" y="70" width="36" height="30" rx="5" fill="#4A90E2"/>
+  <rect x="35" y="73" width="30" height="3" fill="#fff" opacity="0.3"/>
+  
+  <!-- Paint brush (artist symbol) -->
+  <g transform="translate(70,25) rotate(45)">
+    <rect x="0" y="0" width="2" height="12" fill="#8B4513"/>
+    <rect x="0" y="0" width="2" height="4" fill="#FFD700"/>
+  </g>
+</svg>

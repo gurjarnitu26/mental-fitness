@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="brainGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#667eea" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#764ba2" stop-opacity="0.6"/>
+    </linearGradient>
+    <linearGradient id="heartGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f093fb" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#f5576c" stop-opacity="0.6"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background circles -->
+  <circle cx="150" cy="100" r="60" fill="#667eea" opacity="0.1"/>
+  <circle cx="450" cy="300" r="80" fill="#f093fb" opacity="0.1"/>
+  <circle cx="500" cy="80" r="40" fill="#27ae60" opacity="0.1"/>
+  
+  <!-- Central figure - person meditating -->
+  <g transform="translate(300,200)">
+    <!-- Body -->
+    <ellipse cx="0" cy="20" rx="45" ry="80" fill="url(#brainGrad)" opacity="0.7"/>
+    <!-- Head -->
+    <circle cx="0" cy="-40" r="35" fill="url(#brainGrad)" opacity="0.8"/>
+    
+    <!-- Brain pattern inside head -->
+    <g stroke="#fff" stroke-width="2" fill="none" opacity="0.6">
+      <path d="M -20,-50 Q -10,-60 0,-50 Q 10,-60 20,-50"/>
+      <path d="M -15,-35 Q 0,-45 15,-35"/>
+      <path d="M -10,-25 Q 0,-30 10,-25"/>
+    </g>
+    
+    <!-- Arms in meditation pose -->
+    <ellipse cx="-30" cy="10" rx="15" ry="35" fill="url(#brainGrad)" opacity="0.7" transform="rotate(-30)"/>
+    <ellipse cx="30" cy="10" rx="15" ry="35" fill="url(#brainGrad)" opacity="0.7" transform="rotate(30)"/>
+    
+    <!-- Legs crossed -->
+    <ellipse cx="-25" cy="70" rx="12" ry="30" fill="url(#brainGrad)" opacity="0.7" transform="rotate(45)"/>
+    <ellipse cx="25" cy="70" rx="12" ry="30" fill="url(#brainGrad)" opacity="0.7" transform="rotate(-45)"/>
+  </g>
+  
+  <!-- Floating hearts representing emotional wellness -->
+  <g filter="url(#glow)">
+    <path d="M 120,150 C 120,145 125,140 130,140 C 135,140 140,145 140,150 C 140,155 130,165 130,165 C 130,165 120,155 120,150 Z" fill="url(#heartGrad)"/>
+    <path d="M 460,120 C 460,115 465,110 470,110 C 475,110 480,115 480,120 C 480,125 470,135 470,135 C 470,135 460,125 460,120 Z" fill="url(#heartGrad)"/>
+    <path d="M 100,280 C 100,275 105,270 110,270 C 115,270 120,275 120,280 C 120,285 110,295 110,295 C 110,295 100,285 100,280 Z" fill="url(#heartGrad)"/>
+  </g>
+  
+  <!-- Thought bubbles/energy waves -->
+  <g stroke="#667eea" stroke-width="2" fill="none" opacity="0.4">
+    <!-- Waves emanating from head -->
+    <path d="M 200,150 Q 180,140 160,150"/>
+    <path d="M 400,150 Q 420,140 440,150"/>
+    <path d="M 200,130 Q 170,120 140,130"/>
+    <path d="M 400,130 Q 430,120 460,130"/>
+    
+    <!-- Connection lines -->
+    <path d="M 150,200 Q 200,180 250,200"/>
+    <path d="M 350,200 Q 400,180 450,200"/>
+  </g>
+  
+  <!-- Inspirational symbols -->
+  <!-- Lotus petals -->
+  <g transform="translate(300,320)" opacity="0.5">
+    <ellipse cx="0" cy="-20" rx="8" ry="20" fill="url(#heartGrad)" transform="rotate(0)"/>
+    <ellipse cx="0" cy="-20" rx="8" ry="20" fill="url(#heartGrad)" transform="rotate(45)"/>
+    <ellipse cx="0" cy="-20" rx="8" ry="20" fill="url(#heartGrad)" transform="rotate(90)"/>
+    <ellipse cx="0" cy="-20" rx="8" ry="20" fill="url(#heartGrad)" transform="rotate(135)"/>
+    <ellipse cx="0" cy="-20" rx="8" ry="20" fill="url(#heartGrad)" transform="rotate(180)"/>
+    <ellipse cx="0" cy="-20" rx="8" ry="20" fill="url(#heartGrad)" transform="rotate(225)"/>
+    <ellipse cx="0" cy="-20" rx="8" ry="20" fill="url(#heartGrad)" transform="rotate(270)"/>
+    <ellipse cx="0" cy="-20" rx="8" ry="20" fill="url(#heartGrad)" transform="rotate(315)"/>
+  </g>
+  
+  <!-- Peaceful dots scattered around -->
+  <circle cx="80" cy="50" r="3" fill="#27ae60" opacity="0.6"/>
+  <circle cx="520" cy="60" r="4" fill="#667eea" opacity="0.6"/>
+  <circle cx="50" cy="350" r="2" fill="#f093fb" opacity="0.6"/>
+  <circle cx="550" cy="350" r="3" fill="#27ae60" opacity="0.6"/>
+</svg>

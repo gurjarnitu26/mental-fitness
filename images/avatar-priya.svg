@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="skin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F4C2A1"/>
+      <stop offset="100%" stop-color="#E6A87A"/>
+    </linearGradient>
+    <linearGradient id="hair" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2F1B14"/>
+      <stop offset="100%" stop-color="#1A0E0A"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="50" cy="50" r="49" fill="#f093fb" opacity="0.1" stroke="#f093fb" stroke-width="2"/>
+  
+  <!-- Face -->
+  <circle cx="50" cy="45" r="22" fill="url(#skin)"/>
+  
+  <!-- Hair (longer, feminine) -->
+  <path d="M 28 35 Q 35 25 50 25 Q 65 25 72 35 Q 72 50 70 60 Q 65 35 50 35 Q 35 35 28 50 Q 28 45 28 35 Z" fill="url(#hair)"/>
+  <!-- Hair sides -->
+  <ellipse cx="30" cy="50" rx="5" ry="15" fill="url(#hair)"/>
+  <ellipse cx="70" cy="50" rx="5" ry="15" fill="url(#hair)"/>
+  
+  <!-- Eyes (slightly larger, feminine) -->
+  <ellipse cx="44" cy="42" rx="2.5" ry="2" fill="#000"/>
+  <ellipse cx="56" cy="42" rx="2.5" ry="2" fill="#000"/>
+  <circle cx="44.5" cy="41.5" r="0.8" fill="#fff"/>
+  <circle cx="56.5" cy="41.5" r="0.8" fill="#fff"/>
+  
+  <!-- Eyelashes -->
+  <path d="M 42 40 L 41 38" stroke="#1A0E0A" stroke-width="1"/>
+  <path d="M 44 39 L 44 37" stroke="#1A0E0A" stroke-width="1"/>
+  <path d="M 46 40 L 47 38" stroke="#1A0E0A" stroke-width="1"/>
+  <path d="M 54 40 L 53 38" stroke="#1A0E0A" stroke-width="1"/>
+  <path d="M 56 39 L 56 37" stroke="#1A0E0A" stroke-width="1"/>
+  <path d="M 58 40 L 59 38" stroke="#1A0E0A" stroke-width="1"/>
+  
+  <!-- Eyebrows (shaped) -->
+  <path d="M 40 38 Q 44 35 48 37" stroke="#2F1B14" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <path d="M 52 37 Q 56 35 60 38" stroke="#2F1B14" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  
+  <!-- Nose -->
+  <path d="M 50 44 Q 51 47 50 49" stroke="#E6A87A" stroke-width="1" fill="none"/>
+  
+  <!-- Lips (more defined) -->
+  <path d="M 46 52 Q 50 55 54 52" stroke="#B8860B" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M 47 53 Q 50 54 53 53" stroke="#DAA520" stroke-width="1" fill="none" stroke-linecap="round"/>
+  
+  <!-- Neck/Shoulders -->
+  <ellipse cx="50" cy="75" rx="18" ry="25" fill="url(#skin)"/>
+  
+  <!-- Saree/Kurti (traditional Indian) -->
+  <rect x="32" y="70" width="36" height="30" rx="5" fill="#E91E63"/>
+  <path d="M 35 75 Q 50 73 65 75" stroke="#FFD700" stroke-width="2" fill="none"/>
+  <path d="M 35 80 Q 50 78 65 80" stroke="#FFD700" stroke-width="1" fill="none"/>
+  
+  <!-- Bindi -->
+  <circle cx="50" cy="35" r="1.5" fill="#E91E63"/>
+  
+  <!-- Small earrings -->
+  <circle cx="28" cy="48" r="2" fill="#FFD700"/>
+  <circle cx="72" cy="48" r="2" fill="#FFD700"/>
+</svg>

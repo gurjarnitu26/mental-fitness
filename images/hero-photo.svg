@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900">
+  <defs>
+    <linearGradient id="dusk" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#667eea"/>
+      <stop offset="100%" stop-color="#764ba2"/>
+    </linearGradient>
+    <linearGradient id="sun" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFD194" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#D1913C" stop-opacity="0.6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1440" height="900" fill="url(#dusk)"/>
+  <circle cx="1080" cy="200" r="120" fill="url(#sun)" opacity="0.6"/>
+  <!-- Abstract skyline inspired by Indian cities -->
+  <g fill="#000" opacity="0.2">
+    <path d="M0 700 L80 680 L160 690 L240 660 L320 680 L400 640 L480 660 L560 650 L640 670 L720 630 L800 660 L880 640 L960 650 L1040 620 L1120 640 L1200 630 L1280 650 L1360 640 L1440 660 L1440 900 L0 900 Z"/>
+  </g>
+  <g fill="#000" opacity="0.15">
+    <path d="M0 740 L100 720 L200 730 L300 710 L400 720 L500 700 L600 710 L700 700 L800 720 L900 690 L1000 710 L1100 700 L1200 710 L1300 690 L1400 710 L1440 720 L1440 900 L0 900 Z"/>
+  </g>
+  <!-- People silhouettes -->
+  <g fill="#000" opacity="0.2" transform="translate(0,20)">
+    <circle cx="220" cy="780" r="14"/>
+    <rect x="212" y="790" width="16" height="40" rx="4"/>
+    <circle cx="280" cy="780" r="12"/>
+    <rect x="274" y="790" width="12" height="40" rx="4"/>
+    <circle cx="320" cy="780" r="13"/>
+    <rect x="313" y="790" width="14" height="40" rx="4"/>
+  </g>
+</svg>
